@@ -2,11 +2,11 @@
 > A '100 days of code' style learning project
 
 
-The goal here is to write small bits of code every weekday. I'm going to try and keep everything in Jupyter notebooks so that I can use NBDev to manade documenting it all and sharing code between days in case I want to build more complex things using building blocks from previous days. It should also make everything into a nice website at https://johnowhitaker.github.io/days_of_code/.
+The goal here is to write small bits of code every weekday. I'm going to try and keep everything in Jupyter notebooks so that I can use NBDev to manage documenting it all and sharing code between days in case I want to build more complex things using building blocks from previous days. It should also make everything into a nice website at https://johnowhitaker.github.io/days_of_code/.
 
 If we're making changes to those files a lot, autoreload comes in handy:
 
-```python
+```
 %load_ext autoreload
 %autoreload 2
 ```
@@ -17,7 +17,7 @@ If we're making changes to those files a lot, autoreload comes in handy:
 
 Here's a demo function defined in another notebook:
 
-```python
+```
 demo_code() # Code defined in 00_core.ipynb, exported to 'core.py' and imported at the top of this NB
 ```
 
@@ -28,7 +28,7 @@ demo_code() # Code defined in 00_core.ipynb, exported to 'core.py' and imported 
 
 
 
-```python
+```
 hw_cairo('this should work')
 ```
 
