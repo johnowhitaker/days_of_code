@@ -1,6 +1,7 @@
 {
   "days_of_code": {
     "Overview": "/",
-    "Some Core Utilities": "core.html"
+    "Some Core Utilities": "core.html",
+    "Some Cairo Basics": "Cairo_Hello.html"
   }
 }

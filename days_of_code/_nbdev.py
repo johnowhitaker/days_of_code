@@ -2,7 +2,8 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"demo_code": "00_core.ipynb"}
+index = {"demo_code": "00_core.ipynb",
+         "hw_cairo": "01_Cairo_Hello.ipynb"}
 
 modules = ["core.py"]
 
