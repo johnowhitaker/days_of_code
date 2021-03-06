@@ -4,4 +4,4 @@ __all__ = ['demo_code']
 
 # Cell
 def demo_code():
-    return 'demo_modified'
+    return 'demo'
