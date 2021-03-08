@@ -17,12 +17,14 @@ demo_code() # Code defined in 00_core.ipynb, exported to 'core.py' and imported 
 
 
 
+Code from multiple notebooks can go into the same eventual file. Here's a function from 01_Cairo_Hello.ipynb that does a bit of text with cairo and also gets exported to core.py
+
 ```python
 hw_cairo('this should work')
 ```
 
 
-![png](docs/images/output_3_0.png)
+![png](docs/images/output_4_0.png)
 
 
 Today is a Saturday - but I'm keen to get started and at least lay the foundation so that on Monday I can jump right in rather than starting with all the setup (although it was nice and easy thanks to NBDev - thanks team!)

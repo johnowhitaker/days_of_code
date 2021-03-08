@@ -6,8 +6,8 @@ title: Some Cairo Basics
 keywords: fastai
 sidebar: home_sidebar
 
-summary: "I plan on starting with some arty stuff"
-description: "I plan on starting with some arty stuff"
+summary: "I plan on starting with some arty stuff, which means day 1 is me playing with cairo"
+description: "I plan on starting with some arty stuff, which means day 1 is me playing with cairo"
 nb_path: "01_Cairo_Hello.ipynb"
 ---
 <!--
@@ -29,26 +29,10 @@ nb_path: "01_Cairo_Hello.ipynb"
 </div>
     {% endraw %}
 
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">days_of_code.core</span> <span class="kn">import</span> <span class="o">*</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This should be a chance to try out a drawing library and, importantly, figure out managing dependancies and such before Monday. I tried <code>sudo apt install libcairo2-dev pkg-config</code> but <code>pip install pycairo</code> still failed :/ Instead I did <code>pip install cairocffi</code> so I guess that's what I'm using. I added it to the requirements list in settings.ini.</p>
+<p>Here's the first example I tried, which I export to core.py so that it can be used elsewhere. The main motivation here was to check that evreything works and to see how NBDev handles this sort of thing. You'll notice it hides the actual method by default, but gives the docstring.</p>
 
 </div>
 </div>
@@ -64,8 +48,9 @@ nb_path: "01_Cairo_Hello.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="hw_cairo" class="doc_header"><code>hw_cairo</code><a href="https://github.com/johnowhitaker/days_of_code/tree/{branch}/days_of_code/core.py#L13" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>hw_cairo</code>(<strong><code>text</code></strong>)</p>
+<h4 id="hw_cairo" class="doc_header"><code>hw_cairo</code><a href="https://github.com/johnowhitaker/days_of_code/tree/master/days_of_code/core.py#L13" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>hw_cairo</code>(<strong><code>text</code></strong>)</p>
 </blockquote>
+<p>Write text as an angled line on a cairo ImageSurface and save to example.png, then display it.</p>
 
 </div>
 
@@ -119,6 +104,333 @@ nb_path: "01_Cairo_Hello.ipynb"
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Inter-conversions">Inter-conversions<a class="anchor-link" href="#Inter-conversions"> </a></h1><p>I know I will want to work with inputs (image files, numpy arrays, PIL) and convert my cairo surfaces to numpy arrays to mess with them and then convert back, etc. So let's mess with that a little bit.</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="surface_to_npy" class="doc_header"><code>surface_to_npy</code><a href="https://github.com/johnowhitaker/days_of_code/tree/master/days_of_code/core.py#L31" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>surface_to_npy</code>(<strong><code>surface</code></strong>)</p>
+</blockquote>
+<p>Cairo ImageSurface to numpy array for inline display</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Creating a surface to mess with:</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">surface</span> <span class="o">=</span> <span class="n">cairo</span><span class="o">.</span><span class="n">ImageSurface</span><span class="p">(</span><span class="n">cairo</span><span class="o">.</span><span class="n">FORMAT_ARGB32</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="c1"># Creating a surface to play with</span>
+<span class="n">context</span> <span class="o">=</span> <span class="n">cairo</span><span class="o">.</span><span class="n">Context</span><span class="p">(</span><span class="n">surface</span><span class="p">)</span>
+<span class="n">context</span><span class="o">.</span><span class="n">set_source_rgb</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># green</span>
+<span class="n">context</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">context</span><span class="o">.</span><span class="n">show_text</span><span class="p">(</span><span class="s1">&#39;Hello World&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Viewing with matplotlib</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">surface_to_npy</span><span class="p">(</span><span class="n">surface</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;matplotlib.image.AxesImage at 0x7f70998af6d0&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A nicer way to view the image without the matplotlib axes is to using PIL and IPython's display. We might as well make a surface_to_PIL function and a display_surface function since we will want to do this a lot.</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="surface_to_PIL" class="doc_header"><code>surface_to_PIL</code><a href="https://github.com/johnowhitaker/days_of_code/tree/master/days_of_code/core.py#L43" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>surface_to_PIL</code>(<strong><code>surface</code></strong>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="display_surface" class="doc_header"><code>display_surface</code><a href="https://github.com/johnowhitaker/days_of_code/tree/master/days_of_code/core.py#L46" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>display_surface</code>(<strong><code>surface</code></strong>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display_surface</span><span class="p">(</span><span class="n">surface</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAYAAADDhn8LAAAC+klEQVR4nO3Xz0vTYRzA8ffmZIiCE0YMhBh2UJHw7AqJkA4Wnjr4D0QKgla7h3jxYp26SRchdspLoAMTi+aggx4cbAaR6EmogRVUWNQhHK21ZRr2w/drl+/zPJ/v5/Ps+fLwfb4gSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIk6VeECPGe92V9SZJMMlnzvggRChQqrvfjNrcZY6zUTpNmmulSe4oprnN93/lq1U+SLKulIxH80xP4py2zTIIEAEGCRInSRVdpPEGCDJl95QoQIOjz+Nscrwdymcs85SkrrDDDDGHCNeOvcIU11siR4yY3K8YzZEobpIsucuR4wxtaaCFMmE46WWW1aq4YMfLkucMd5pjjBCfK8l/jGnnyLLBAN92/Ywl0XIUI8ZnPbHzzK1IsHbHixFliqbQpxhlnhJGqR6x22nnGM5ppJkyYLFn66Kuou8EGJznJVa4yxBATTNBPP2c4w2Me18wVI8ZHPtJOe0X9DjooUKCJJhppJE/eI9bRC/3pCfxWH/hAnHipnSRJlCgA5zhHnDhp0gA00MAii1VzneUsD3jADjsApEjRSy8LLJTF7b1FEiS4xS1aaSVBgh12WGa5Zq4cOZ7znHXWq9Z/y1sA7nP/gKuiQ/i/NkgtAQLMM88QQ2X9ESKHyrv3HXKa0+TIscUWN7jBa15zl7s/vf8d76qO7bL7w2sdmePzDbLEEgMM0EYb8HVjnOJU1fgnPOEiF0vHokEGecSjirgMGS5xiSJFPvGJIkUiROihhyzZX8r1ff3znKeOOoIEucCFQ/x7HdDxeYO84AXDDDPLLPXUs8suo4zyilc/jF9nnSmmyJIlQIAUKR7ysCJujTWiRLnHvbK+Jpp4ycuauWLEqs63QIEUKdKk2WabTTYPuQKSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSdMS+AFPF1qeUe/xCAAAAAElFTkSuQmCC
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Animation">Animation<a class="anchor-link" href="#Animation"> </a></h1><p>I like to watch things as they happen. ipywidgets should make for fun animations.</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+
+<span class="c1"># Set up surface</span>
+<span class="n">surface</span> <span class="o">=</span> <span class="n">cairo</span><span class="o">.</span><span class="n">ImageSurface</span><span class="p">(</span><span class="n">cairo</span><span class="o">.</span><span class="n">FORMAT_ARGB32</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="c1"># Creating a surface to play with</span>
+<span class="n">context</span> <span class="o">=</span> <span class="n">cairo</span><span class="o">.</span><span class="n">Context</span><span class="p">(</span><span class="n">surface</span><span class="p">)</span>
+
+<span class="n">imw</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span>
+    <span class="n">value</span><span class="o">=</span><span class="n">surface</span><span class="o">.</span><span class="n">write_to_png</span><span class="p">(),</span>
+    <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;png&#39;</span><span class="p">,</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">imw</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">context</span><span class="o">.</span><span class="n">set_source_rgb</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="o">/</span><span class="mi">10</span><span class="p">)</span>  <span class="c1"># green</span>
+    <span class="n">context</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="o">+</span><span class="n">i</span><span class="o">*</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">context</span><span class="o">.</span><span class="n">show_text</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Hello </span><span class="si">{i}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">imw</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">surface</span><span class="o">.</span><span class="n">write_to_png</span><span class="p">()</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We first make out blank canvas and display that. Whenever we want to update the image, we simply modify the value of the widget. A neat trick here is that <code>surface.write_to_png()</code> returns an io.BytesIO thingee if we don't specify a target, which we can pass straight to the widget (before I was messing about trying to get this same thing to happen the long way around). This is pretty neat - we can set up a surface and then occasionally draw to it when we want to see updates. Let's demonstrate this with an example drawing a crazy amount of rectangles:</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="c1"># Set up surface</span>
+<span class="n">surface</span> <span class="o">=</span> <span class="n">cairo</span><span class="o">.</span><span class="n">ImageSurface</span><span class="p">(</span><span class="n">cairo</span><span class="o">.</span><span class="n">FORMAT_ARGB32</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span> <span class="c1"># Creating a surface to play with</span>
+<span class="n">context</span> <span class="o">=</span> <span class="n">cairo</span><span class="o">.</span><span class="n">Context</span><span class="p">(</span><span class="n">surface</span><span class="p">)</span>
+
+<span class="n">imw</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span>
+    <span class="n">value</span><span class="o">=</span><span class="n">surface</span><span class="o">.</span><span class="n">write_to_png</span><span class="p">(),</span>
+    <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;png&#39;</span><span class="p">,</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">imw</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100000</span><span class="p">):</span>
+    <span class="n">context</span><span class="o">.</span><span class="n">set_source_rgba</span><span class="p">(</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">i</span><span class="o">/</span><span class="mf">1e4</span><span class="p">,</span> <span class="mi">1</span><span class="o">-</span><span class="n">i</span><span class="o">/</span><span class="mf">1e5</span><span class="p">,</span> <span class="mi">1</span><span class="o">-</span><span class="n">i</span><span class="o">/</span><span class="mf">1e5</span><span class="p">)</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span><span class="o">*</span><span class="mi">600</span><span class="p">,</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span><span class="o">*</span><span class="mi">400</span>
+    <span class="n">context</span><span class="o">.</span><span class="n">rectangle</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">context</span><span class="o">.</span><span class="n">fill</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">i</span><span class="o">%</span><span class="k">1e4</span> == 0: # Change this to alter the number of updates (this affects the speed of the loop)
+        <span class="n">imw</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">surface</span><span class="o">.</span><span class="n">write_to_png</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Conclusions">Conclusions<a class="anchor-link" href="#Conclusions"> </a></h1><p>That's an hour of mostly logistics, but at the end of it we have easy ways to play with cairo in Jupyter, including converting surfaces to arrays, displaying them and, most satisfying, a good fast way to render animations for our viewing pleasure. Tomorrow I hope to start the actual fun stuff.</p>
+
+</div>
+</div>
+</div>
 </div>
  
 
