@@ -2,6 +2,7 @@
   "days_of_code": {
     "Overview": "/",
     "Some Core Utilities": "core.html",
-    "Some Cairo Basics": "Cairo_Hello.html"
+    "Some Cairo Basics": "Cairo_Hello.html",
+    "Meeting Mice": "Meeting_Mice.html"
   }
 }

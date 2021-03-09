@@ -15,6 +15,9 @@ entries:
     - output: web,pdf
       title: Some Cairo Basics
       url: Cairo_Hello.html
+    - output: web,pdf
+      title: Meeting Mice
+      url: Meeting_Mice.html
     output: web
     title: days_of_code
   output: web
