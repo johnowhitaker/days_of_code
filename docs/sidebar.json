@@ -3,6 +3,8 @@
     "Overview": "/",
     "Some Core Utilities": "core.html",
     "Some Cairo Basics": "Cairo_Hello.html",
-    "Meeting Mice": "Meeting_Mice.html"
+    "Meeting Mice": "Meeting_Mice.html",
+    "Augmenting Animals": "Augmenting_Animals.html",
+    "Playing with Perlin Noise": "Playing_with_Perlin.html"
   }
 }

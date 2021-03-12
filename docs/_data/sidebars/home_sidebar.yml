@@ -18,6 +18,12 @@ entries:
     - output: web,pdf
       title: Meeting Mice
       url: Meeting_Mice.html
+    - output: web,pdf
+      title: Augmenting Animals
+      url: Augmenting_Animals.html
+    - output: web,pdf
+      title: Playing with Perlin Noise
+      url: Playing_with_Perlin.html
     output: web
     title: days_of_code
   output: web
