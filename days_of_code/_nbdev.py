@@ -7,6 +7,7 @@ index = {"demo_code": "00_core.ipynb",
          "surface_to_npy": "01_Cairo_Hello.ipynb",
          "surface_to_PIL": "01_Cairo_Hello.ipynb",
          "display_surface": "01_Cairo_Hello.ipynb",
+         "draw_instant": "02_Meeting_Mice.ipynb",
          "random_grad": "05_Playing_with_Perlin.ipynb",
          "interpolate": "05_Playing_with_Perlin.ipynb",
          "dotGridGradient": "05_Playing_with_Perlin.ipynb",
@@ -15,6 +16,7 @@ index = {"demo_code": "00_core.ipynb",
          "RepeatedTimer": "06_Interaction_with_ipycanvas.ipynb"}
 
 modules = ["core.py",
+           "mabe.py",
            "perlin.py"]
 
 doc_url = "https://johnowhitaker.github.io/days_of_code/"
