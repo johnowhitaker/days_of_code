@@ -8,7 +8,7 @@ def demo_code():
 
 # Cell
 import cairocffi as cairo
-from IPython.display import Image, display
+from IPython.display import Image, display, clear_output
 
 def hw_cairo(text):
     """ Write text as an angled line on a cairo ImageSurface and save to example.png, then display it."""
@@ -44,6 +44,7 @@ def surface_to_PIL(surface):
     return PIL.Image.fromarray(surface_to_npy(surface))
 
 def display_surface(surface):
+    clear_output()
     display(surface_to_PIL(surface))
 
 # Cell
