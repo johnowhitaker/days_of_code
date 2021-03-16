@@ -6,7 +6,7 @@ The goal here is to write small bits of code every weekday. I'm going to try and
 
 Here's a demo function defined in another notebook:
 
-```python
+```
 demo_code() # Code defined in 00_core.ipynb, exported to 'core.py' and imported at the top of this NB
 ```
 
@@ -19,7 +19,7 @@ demo_code() # Code defined in 00_core.ipynb, exported to 'core.py' and imported 
 
 Code from multiple notebooks can go into the same eventual file. Here's a function from 01_Cairo_Hello.ipynb that does a bit of text with cairo and also gets exported to core.py
 
-```python
+```
 hw_cairo('this should work')
 ```
 
