@@ -271,7 +271,7 @@ nb_path: "02_Meeting_Mice.ipynb"
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">surface</span> <span class="o">=</span> <span class="n">cairo</span><span class="o">.</span><span class="n">ImageSurface</span><span class="p">(</span><span class="n">cairo</span><span class="o">.</span><span class="n">FORMAT_ARGB32</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="mi">512</span><span class="p">)</span> <span class="c1"># Create the surface</span>
 <span class="n">ctx</span> <span class="o">=</span> <span class="n">cairo</span><span class="o">.</span><span class="n">Context</span><span class="p">(</span><span class="n">surface</span><span class="p">)</span>
 <span class="n">draw_instant</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">sequence</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">surface</span><span class="o">.</span><span class="n">write_to_png</span><span class="p">(</span><span class="s1">&#39;test.png&#39;</span><span class="p">)</span> <span class="c1"># Saving</span>
+<span class="n">surface</span><span class="o">.</span><span class="n">write_to_png</span><span class="p">(</span><span class="s1">&#39;mabe_movement_viz.png&#39;</span><span class="p">)</span> <span class="c1"># Saving</span>
 <span class="n">display_surface</span><span class="p">(</span><span class="n">surface</span><span class="p">)</span>
 </pre></div>
 
@@ -344,8 +344,8 @@ nb_path: "02_Meeting_Mice.ipynb"
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>CPU times: user 537 ms, sys: 0 ns, total: 537 ms
-Wall time: 536 ms
+<pre>CPU times: user 573 ms, sys: 3.87 ms, total: 577 ms
+Wall time: 575 ms
 </pre>
 </div>
 </div>
