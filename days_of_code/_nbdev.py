@@ -6,9 +6,16 @@ index = {"demo_code": "00_core.ipynb",
          "hw_cairo": "01_Cairo_Hello.ipynb",
          "surface_to_npy": "01_Cairo_Hello.ipynb",
          "surface_to_PIL": "01_Cairo_Hello.ipynb",
-         "display_surface": "01_Cairo_Hello.ipynb"}
+         "display_surface": "01_Cairo_Hello.ipynb",
+         "random_grad": "05_Playing_with_Perlin.ipynb",
+         "interpolate": "05_Playing_with_Perlin.ipynb",
+         "dotGridGradient": "05_Playing_with_Perlin.ipynb",
+         "perlin": "05_Playing_with_Perlin.ipynb",
+         "perlin_grid": "05_Playing_with_Perlin.ipynb",
+         "RepeatedTimer": "06_Interaction_with_ipycanvas.ipynb"}
 
-modules = ["core.py"]
+modules = ["core.py",
+           "perlin.py"]
 
 doc_url = "https://johnowhitaker.github.io/days_of_code/"
 
