@@ -6,7 +6,7 @@ The goal here is to write small bits of code every weekday. I'm going to try and
 
 Here's a demo function defined in another notebook:
 
-```
+```python
 demo_code() # Code defined in 00_core.ipynb, exported to 'core.py' and imported at the top of this NB
 ```
 
@@ -19,7 +19,7 @@ demo_code() # Code defined in 00_core.ipynb, exported to 'core.py' and imported 
 
 Code from multiple notebooks can go into the same eventual file. Here's a function from 01_Cairo_Hello.ipynb that does a bit of text with cairo and also gets exported to core.py
 
-```
+```python
 hw_cairo('this should work')
 ```
 
@@ -40,9 +40,12 @@ For day 2 and 3 I was pretty sidetracked with this competition, spending much mo
 
 On Friday (day 5) I decided I couldn't just use my competition playing as my 'days of code' requirement, so I switched things up and decided to try something I'd been meaning to look into for a while: Perlin noise. This is a topic that comes up a lot in generative art and graphics. It turns out the Wikipedia page was all I needed to get some cool images happening - by using perlin noise to steer particles and leave trails you can get some trippy images:
 <table><tr>
-<td> <img src="perlin_turtles.png" alt="Drawing" style="width: 250px;"/> </td>
-<td> <img src="perlin_turtles2.png" alt="Drawing" style="width: 250px;"/> </td>
-    <td> <img src="perlin_turtles3.png" alt="Drawing" style="width: 250px;"/> </td>
+<td> 
+<img src="perlin_turtles.png" alt="Drawing" style="width: 250px;"> </td>
+<td> 
+<img src="perlin_turtles2.png" alt="Drawing2" style="width: 250px;"> </td>
+<td> 
+<img src="perlin_turtles3.png" alt="Drawing3" style="width: 250px;"> </td>
 </tr></table>
 
 ### Week 2
