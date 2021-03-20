@@ -34,7 +34,7 @@ I set this up (configuring nbdev etc) one weekend so that I could dive straight 
 ### Week 1
 
 Day 1 was getting used to cairo and doing some basic widget tests to get animation working to my satisfaction. Day 2 this cairo knowledge came in handy doing some visualizations for the AIcrowd [Multi-Agent BEhaviour Challenge](https://www.aicrowd.com/challenges/multi-agent-behavior-representation-modeling-measurement-and-applications) 
-<img src="notebooks/outputs/mabe_movement_viz.png" style="width: 250px;">
+<img src="outputs/mabe_movement_viz.png" style="width: 250px;">
 
 For day 2 and 3 I was pretty sidetracked with this competition, spending much more than an hour a day working on it. The resulting code is scattered across a bunch of notebooks in my Google Drive, but I will be documenting this process in a separate project to be released once that competition ends. 
 
@@ -42,12 +42,16 @@ On Friday (day 5) I decided I couldn't just use my competition playing as my 'da
 <!-- <table><tr>
 <td> 
 <div style="width: 250px;">
+<<<<<<< HEAD
 <img src="notebooks/outputs/perlin_turtles.png" alt="Drawing"> 
 </td>
+=======
+<img src="outputs/perlin_turtles.png" alt="Drawing"> </td>
+>>>>>>> 0c04fe4241eea36ccbb6ea8a06b235763f22aef6
 </div>
 <td> 
 <div style="width: 250px;">
-<img src="notebooks/outputs/perlin_turtles2.png" alt="Drawing2" style="width: 250px;"> </td>
+<img src="outputs/perlin_turtles2.png" alt="Drawing2" style="width: 250px;"> </td>
 </div>
 </tr></table> -->
 
@@ -64,7 +68,7 @@ On Friday (day 5) I decided I couldn't just use my competition playing as my 'da
 On day 6 I moved to ipycanvas hoping to make some interactive graphics stuff. It was good fun, and seeing thousands of circles move and shift and react to mouse clicks was satisfying. Sadly it doesn't leave an artefact that I can embed into these html docs, so you'll have to take my word for it or wait for my recap video(s) and make do with this static image for now:
 
 <div style="width: 50%; display: block; margin-left: auto;  margin-right: auto;">
-<img src="notebooks/outputs/perlin_ipycanvas1.png">
+<img src="outputs/perlin_ipycanvas1.png">
 </div>
 
 Day 7 was a documentation day - I wrote the summary so far and tidied notebooks 1-6, making them easier to read and removing some duplicated cells and other cruft that was left over from the initial experimentation. I did write some code as I re-factored things, but it was mostly admin. I think this is important, and I will do 'documentation days' every week or two to keep things organised.
@@ -77,15 +81,16 @@ Day 9 was EDA and using cairo to try and make some pretty visualizations:
 
 <table><tr>
 <td> 
-<img src="notebooks/outputs/day_counts_left_to_right.png" alt="Drawing" style="width: 350px;"> </td>
+<img src="outputs/day_counts_left_to_right.png" alt="Drawing" style="width: 350px;"> </td>
 <td> 
-<img src="notebooks/outputs/day_counts_spiral.png" alt="Drawing2" style="width: 350px;"> </td>
+<img src="outputs/day_counts_spiral.png" alt="Drawing2" style="width: 350px;"> </td>
 </tr></table>
 
 And day 10 took things 3D, using [SolidPython](https://github.com/SolidCode/SolidPython) (a python equivalent of OpenSCAD) to make some 3D shapes which I could then 3D print:
 
 <table><tr>
 <td> 
+<<<<<<< HEAD
 <div style="width: 350px;">
 <img src="notebooks/images/drawing_spheres.png" alt="Drawing"> </td>
 </div>
@@ -93,6 +98,11 @@ And day 10 took things 3D, using [SolidPython](https://github.com/SolidCode/Soli
 <div style="width: 350px;">
 <img src="notebooks/images/3d_print.jpeg" alt="Drawing2"> </td>
 </div>
+=======
+<img src="images/drawing_spheres.png" alt="Drawing" style="width: 350px;"> </td>
+<td> 
+<img src="images/3d_print.jpeg" alt="Drawing2" style="width: 350px;"> </td>
+>>>>>>> 0c04fe4241eea36ccbb6ea8a06b235763f22aef6
 </tr></table>
 
 # Conclusion
