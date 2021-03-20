@@ -133,18 +133,23 @@ nb_path: "notebooks/index.ipynb"
 <p>On Friday (day 5) I decided I couldn't just use my competition playing as my 'days of code' requirement, so I switched things up and decided to try something I'd been meaning to look into for a while: Perlin noise. This is a topic that comes up a lot in generative art and graphics. It turns out the Wikipedia page was all I needed to get some cool images happening - by using perlin noise to steer particles and leave trails you can get some trippy images:</p>
 <table><tr>
 <td> 
-{% include image.html alt="Drawing" style="width: 250px;" file="/days_of_code/outputs/perlin_turtles.png" %} </td>
+<div style="width: 250px;">
+{% include image.html alt="Drawing" file="/days_of_code/outputs/perlin_turtles.png" %} </td>
+</div>
 <td> 
+<div style="width: 250px;">
 {% include image.html alt="Drawing2" style="width: 250px;" file="/days_of_code/outputs/perlin_turtles2.png" %} </td>
+</div>
 </tr></table>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Week-2">Week 2<a class="anchor-link" href="#Week-2"> </a></h3><p>On day 6 I moved to ipycanvas hoping to make some interactive graphics stuff. It was good fun, and seeing thousands of circles move and shift and react to mouse clicks was satisfying. Sadly it doesn't leave an artefact that I can embed into these html docs, so you'll have to take my word for it or wait for my recap video(s) and make do with this static image for now:
-{% include image.html style="width: 500px;" file="/days_of_code/outputs/perlin_ipycanvas1.png" %}</p>
-<p>Day 7 was a documentation day - I wrote the summary so far and tidied notebooks 1-6, making them easier to read and removing some duplicated cells and other cruft that was left over from the initial experimentation. I did write some code as I re-factored things, but it was mostly admin. I think this is important, and I will do 'documentation days' every week or two to keep things organised.</p>
+<h3 id="Week-2">Week 2<a class="anchor-link" href="#Week-2"> </a></h3><p>On day 6 I moved to ipycanvas hoping to make some interactive graphics stuff. It was good fun, and seeing thousands of circles move and shift and react to mouse clicks was satisfying. Sadly it doesn't leave an artefact that I can embed into these html docs, so you'll have to take my word for it or wait for my recap video(s) and make do with this static image for now:</p>
+<div style="width: 50%; display: block; margin-left: auto;  margin-right: auto;">
+{% include image.html file="/days_of_code/outputs/perlin_ipycanvas1.png" %}
+</div><p>Day 7 was a documentation day - I wrote the summary so far and tidied notebooks 1-6, making them easier to read and removing some duplicated cells and other cruft that was left over from the initial experimentation. I did write some code as I re-factored things, but it was mostly admin. I think this is important, and I will do 'documentation days' every week or two to keep things organised.</p>
 <p>You'll notice day 8 is missing - I did some playing with a separate project (TODO link birdio).</p>
 <p>Days 9 and 10 I was playing with <a href="https://hackaday.io/project/178286-data-driven-mood-light">my entry into the Hackaday Data Loggin' Contest</a>. The data is a record of how many times a certain kind of event happened every day for the past few years.</p>
 <p>Day 9 was EDA and using cairo to try and make some pretty visualizations:</p>

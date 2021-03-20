@@ -41,15 +41,22 @@ For day 2 and 3 I was pretty sidetracked with this competition, spending much mo
 On Friday (day 5) I decided I couldn't just use my competition playing as my 'days of code' requirement, so I switched things up and decided to try something I'd been meaning to look into for a while: Perlin noise. This is a topic that comes up a lot in generative art and graphics. It turns out the Wikipedia page was all I needed to get some cool images happening - by using perlin noise to steer particles and leave trails you can get some trippy images:
 <table><tr>
 <td> 
-<img src="notebooks/outputs/perlin_turtles.png" alt="Drawing" style="width: 250px;"> </td>
+<div style="width: 250px;">
+<img src="notebooks/outputs/perlin_turtles.png" alt="Drawing"> </td>
+</div>
 <td> 
+<div style="width: 250px;">
 <img src="notebooks/outputs/perlin_turtles2.png" alt="Drawing2" style="width: 250px;"> </td>
+</div>
 </tr></table>
 
 ### Week 2
 
 On day 6 I moved to ipycanvas hoping to make some interactive graphics stuff. It was good fun, and seeing thousands of circles move and shift and react to mouse clicks was satisfying. Sadly it doesn't leave an artefact that I can embed into these html docs, so you'll have to take my word for it or wait for my recap video(s) and make do with this static image for now:
-<img src="notebooks/outputs/perlin_ipycanvas1.png" style="width: 500px;">
+
+<div style="width: 50%; display: block; margin-left: auto;  margin-right: auto;">
+<img src="notebooks/outputs/perlin_ipycanvas1.png">
+</div>
 
 Day 7 was a documentation day - I wrote the summary so far and tidied notebooks 1-6, making them easier to read and removing some duplicated cells and other cruft that was left over from the initial experimentation. I did write some code as I re-factored things, but it was mostly admin. I think this is important, and I will do 'documentation days' every week or two to keep things organised.
 
