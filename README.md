@@ -39,15 +39,24 @@ Day 1 was getting used to cairo and doing some basic widget tests to get animati
 For day 2 and 3 I was pretty sidetracked with this competition, spending much more than an hour a day working on it. The resulting code is scattered across a bunch of notebooks in my Google Drive, but I will be documenting this process in a separate project to be released once that competition ends. 
 
 On Friday (day 5) I decided I couldn't just use my competition playing as my 'days of code' requirement, so I switched things up and decided to try something I'd been meaning to look into for a while: Perlin noise. This is a topic that comes up a lot in generative art and graphics. It turns out the Wikipedia page was all I needed to get some cool images happening - by using perlin noise to steer particles and leave trails you can get some trippy images:
-<table><tr>
+<!-- <table><tr>
 <td> 
 <div style="width: 250px;">
-<img src="notebooks/outputs/perlin_turtles.png" alt="Drawing"> </td>
+<img src="notebooks/outputs/perlin_turtles.png" alt="Drawing"> 
+</td>
 </div>
 <td> 
 <div style="width: 250px;">
 <img src="notebooks/outputs/perlin_turtles2.png" alt="Drawing2" style="width: 250px;"> </td>
 </div>
+</tr></table> -->
+
+<table><tr>
+<td> 
+<img src="notebooks/outputs/perlin_turtles.png" alt="Drawing" style="width: 250px;"> 
+</td>
+<td> 
+<img src="notebooks/outputs/perlin_turtles2.png" alt="Drawing2" style="width: 250px;"> </td>
 </tr></table>
 
 ### Week 2
@@ -77,9 +86,13 @@ And day 10 took things 3D, using [SolidPython](https://github.com/SolidCode/Soli
 
 <table><tr>
 <td> 
-<img src="notebooks/images/drawing_spheres.png" alt="Drawing" style="width: 350px;"> </td>
+<div style="width: 350px;">
+<img src="notebooks/images/drawing_spheres.png" alt="Drawing"> </td>
+</div>
 <td> 
-<img src="notebooks/images/3d_print.jpeg" alt="Drawing2" style="width: 350px;"> </td>
+<div style="width: 350px;">
+<img src="notebooks/images/3d_print.jpeg" alt="Drawing2"> </td>
+</div>
 </tr></table>
 
 # Conclusion
