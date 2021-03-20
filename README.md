@@ -66,7 +66,7 @@ Day 9 was EDA and using cairo to try and make some pretty visualizations:
 <img src="notebooks/outputs/day_counts_spiral.png" alt="Drawing2" style="width: 350px;"> </td>
 </tr></table>
 
-And day 10 took things 3D, using a python equivalent of OpenSCAD to make some 3D shapes which I could then 3D print:
+And day 10 took things 3D, using [SolidPython](https://github.com/SolidCode/SolidPython) (a python equivalent of OpenSCAD) to make some 3D shapes which I could then 3D print:
 
 <table><tr>
 <td> 
