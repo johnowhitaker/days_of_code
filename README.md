@@ -70,9 +70,9 @@ And day 10 took things 3D, using [SolidPython](https://github.com/SolidCode/Soli
 
 <table><tr>
 <td> 
-<img src="notebooks/../images/drawing_spheres.png" alt="Drawing" style="width: 350px;"> </td>
+<img src="notebooks/images/drawing_spheres.png" alt="Drawing" style="width: 350px;"> </td>
 <td> 
-<img src="notebooks/../images/3d_print.jpeg" alt="Drawing2" style="width: 350px;"> </td>
+<img src="notebooks/images/3d_print.jpeg" alt="Drawing2" style="width: 350px;"> </td>
 </tr></table>
 
 # Conclusion
