@@ -102,6 +102,24 @@ And day 10 took things 3D, using [SolidPython](https://github.com/SolidCode/Soli
 
 Just started, but so far I am really enjoying Observable. My first notebook there played with some of the same Perlin noise ideas as day 5. But since it's all JS this time I get interactive cell outputs that I can embed anywhere! Check it out:
 
+```python
+display(HTML("""
+<iframe width="49%" height="400" frameborder="0"
+  src="https://observablehq.com/embed/@johnowhitaker/meeting-observable?cells=p_zoom%2Cviewof+scale"></iframe>
+<iframe width="49%" height="430" frameborder="0"
+  src="https://observablehq.com/embed/@johnowhitaker/meeting-observable?cells=anim%2Cviewof+speed"></iframe>
+"""))
+```
+
+
+
+<iframe width="49%" height="400" frameborder="0"
+  src="https://observablehq.com/embed/@johnowhitaker/meeting-observable?cells=p_zoom%2Cviewof+scale"></iframe>
+<iframe width="49%" height="430" frameborder="0"
+  src="https://observablehq.com/embed/@johnowhitaker/meeting-observable?cells=anim%2Cviewof+speed"></iframe>
+
+
+
 # Conclusion
 
 This is going well so far - I will try to keep this updated :)
