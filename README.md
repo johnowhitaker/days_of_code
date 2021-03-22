@@ -80,6 +80,10 @@ And day 10 took things 3D, using [SolidPython](https://github.com/SolidCode/Soli
 <img src="notebooks/images/3d_print.jpeg" alt="Drawing2" width="350px"> </td>
 </tr></table>
 
+### Week 3
+
+Just started, but so far I am really enjoying Observable. My first notebook there played with some of the same Perlin noise ideas as day 5. But since it's all JS this time I get interactive cell outputs that I can embed anywhere! Check it out:
+
 # Conclusion
 
 This is going well so far - I will try to keep this updated :)
