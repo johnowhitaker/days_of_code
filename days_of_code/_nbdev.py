@@ -14,11 +14,15 @@ index = {"demo_code": "00_core.ipynb",
          "dotGridGradient": "05_Playing_with_Perlin.ipynb",
          "perlin": "05_Playing_with_Perlin.ipynb",
          "perlin_grid": "05_Playing_with_Perlin.ipynb",
-         "RepeatedTimer": "06_Interaction_with_ipycanvas.ipynb"}
+         "RepeatedTimer": "06_Interaction_with_ipycanvas.ipynb",
+         "parse_tune": "14_Web_Scraping_ABC.ipynb",
+         "get_tune": "14_Web_Scraping_ABC.ipynb",
+         "set_up_threads": "14_Web_Scraping_ABC.ipynb"}
 
 modules = ["core.py",
            "mabe.py",
-           "perlin.py"]
+           "perlin.py",
+           "abc.py"]
 
 doc_url = "https://johnowhitaker.github.io/days_of_code/"
 

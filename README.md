@@ -120,6 +120,8 @@ display(HTML("""
 
 
 
+Tuesday and Wednesday I was sidetracked playing with Perceiver TODO notes and maybe a notebook
+
 # Conclusion
 
 This is going well so far - I will try to keep this updated :)
