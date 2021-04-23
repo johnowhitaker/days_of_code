@@ -40,29 +40,21 @@ For day 2 and 3 I was pretty sidetracked with this competition, spending much mo
 
 On Friday (day 5) I decided I couldn't just use my competition playing as my 'days of code' requirement, so I switched things up and decided to try something I'd been meaning to look into for a while: Perlin noise. This is a topic that comes up a lot in generative art and graphics. It turns out the Wikipedia page was all I needed to get some cool images happening - by using perlin noise to steer particles and leave trails you can get some trippy images:
 
-
-
 <table style="margin: 0px auto;"><tr>
 <td> 
-<img src="outputs/perlin_turtles.png" alt="Drawing" width='250px'/> 
+<img src="notebooks/outputs/perlin_turtles.png" alt="Drawing" width="250px"> 
 </td>
 <td> 
-<img src="outputs/perlin_turtles2.png" alt="Drawing2" width='250px'/> </td>
+<img src="notebooks/outputs/perlin_turtles2.png" alt="Drawing2" width="250px"> </td>
 </tr></table>
-
-
 
 ### Week 2
 
 On day 6 I moved to ipycanvas hoping to make some interactive graphics stuff. It was good fun, and seeing thousands of circles move and shift and react to mouse clicks was satisfying. Sadly it doesn't leave an artefact that I can embed into these html docs, so you'll have to take my word for it or wait for my recap video(s) and make do with this static image for now:
 
-
-
 <div style="width: 50%; display: block; margin-left: auto;  margin-right: auto;">
-<img src="outputs/perlin_ipycanvas1.png">
+<img src="notebooks/outputs/perlin_ipycanvas1.png">
 </div>
-
-
 
 Day 7 was a documentation day - I wrote the summary so far and tidied notebooks 1-6, making them easier to read and removing some duplicated cells and other cruft that was left over from the initial experimentation. I did write some code as I re-factored things, but it was mostly admin. I think this is important, and I will do 'documentation days' every week or two to keep things organised.
 
@@ -72,35 +64,25 @@ Days 9 and 10 I was playing with [my entry into the Hackaday Data Loggin' Contes
 
 Day 9 was EDA and using cairo to try and make some pretty visualizations:
 
-
-
 <table><tr>
 <td> 
-<img src="outputs/day_counts_left_to_right.png" alt="Drawing" width='350px'/> </td>
+<img src="notebooks/outputs/day_counts_left_to_right.png" alt="Drawing" width="350px"> </td>
 <td> 
-<img src="outputs/day_counts_spiral.png" alt="Drawing2" width='350px'/> </td>
+<img src="notebooks/outputs/day_counts_spiral.png" alt="Drawing2" width="350px"> </td>
 </tr></table>
-
-
 
 And day 10 took things 3D, using [SolidPython](https://github.com/SolidCode/SolidPython) (a python equivalent of OpenSCAD) to make some 3D shapes which I could then 3D print:
 
-
-
-
-
 <table><tr>
 <td> 
-<img src="images/drawing_spheres.png" alt="Drawing" width='350px'/> </td>
+<img src="notebooks/images/drawing_spheres.png" alt="Drawing" width="350px"> </td>
 <td> 
-<img src="images/3d_print.jpeg" alt="Drawing2" width='350px'/> </td>
+<img src="notebooks/images/3d_print.jpeg" alt="Drawing2" width="350px"> </td>
 </tr></table>
-
-
 
 ### Week 3
 
-Just started, but so far I am really enjoying Observable. My first notebook there played with some of the same Perlin noise ideas as day 5. But since it's all JS this time I get interactive cell outputs that I can embed anywhere! Check it out:
+At the start of the week I met Observable. My first notebook there played with some of the same Perlin noise ideas as day 5. But since it's all JS this time I get interactive cell outputs that I can embed anywhere! Check it out:
 
 ```python
 display(HTML("""
@@ -120,7 +102,23 @@ display(HTML("""
 
 
 
-Tuesday and Wednesday I was sidetracked playing with Perceiver TODO notes and maybe a notebook
+## Week 4 (ish)
+
+Shaders...
+
+```python
+display(HTML("""
+<iframe width="99%" height="400" frameborder="0"
+  src="./shader_gallery.html"></iframe>
+"""))
+```
+
+
+
+<iframe width="99%" height="400" frameborder="0"
+  src="./shader_gallery.html"></iframe>
+
+
 
 # Conclusion
 

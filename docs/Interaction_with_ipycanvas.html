@@ -123,6 +123,33 @@ nb_path: "notebooks/06_Interaction_with_ipycanvas.ipynb"
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">RuntimeError</span>                              Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-4-dbfb50efe5a2&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-red-fg">#skiptest</span>
+<span class="ansi-green-fg">----&gt; 2</span><span class="ansi-red-fg"> </span>canvas<span class="ansi-blue-fg">.</span>to_file<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;outputs/perlin_ipycanvas1.png&#39;</span><span class="ansi-blue-fg">)</span> <span class="ansi-red-fg"># Saving to file requires sync_image_data=True when making the canvas</span>
+
+<span class="ansi-green-fg">~/anaconda3/lib/python3.7/site-packages/ipycanvas/canvas.py</span> in <span class="ansi-cyan-fg">to_file</span><span class="ansi-blue-fg">(self, filename)</span>
+<span class="ansi-green-intense-fg ansi-bold">    195</span>         &#34;&#34;&#34;
+<span class="ansi-green-intense-fg ansi-bold">    196</span>         <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>image_data <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 197</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">raise</span> RuntimeError<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;No image data to save, please be sure that ``sync_image_data`` is set to True&#39;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    198</span>         <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> filename<span class="ansi-blue-fg">.</span>endswith<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;.png&#39;</span><span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">and</span> <span class="ansi-green-fg">not</span> filename<span class="ansi-blue-fg">.</span>endswith<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;.PNG&#39;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    199</span>             <span class="ansi-green-fg">raise</span> RuntimeError<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;Can only save to a PNG file&#39;</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">RuntimeError</span>: No image data to save, please be sure that ``sync_image_data`` is set to True</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     {% endraw %}
 

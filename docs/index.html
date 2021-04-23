@@ -131,151 +131,55 @@ nb_path: "notebooks/index.ipynb"
 {% include image.html style="width: 250px;" file="/days_of_code/outputs/mabe_movement_viz.png" %}</p>
 <p>For day 2 and 3 I was pretty sidetracked with this competition, spending much more than an hour a day working on it. The resulting code is scattered across a bunch of notebooks in my Google Drive, but I will be documenting this process in a separate project to be released once that competition ends.</p>
 <p>On Friday (day 5) I decided I couldn't just use my competition playing as my 'days of code' requirement, so I switched things up and decided to try something I'd been meaning to look into for a while: Perlin noise. This is a topic that comes up a lot in generative art and graphics. It turns out the Wikipedia page was all I needed to get some cool images happening - by using perlin noise to steer particles and leave trails you can get some trippy images:</p>
-
-</div>
-</div>
-</div>
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-
 <table style="margin: 0px auto;"><tr>
 <td> 
-<img src="outputs/perlin_turtles.png" alt="Drawing" width='250px'/> 
+{% include image.html alt="Drawing" max-width="250px" file="/days_of_code/outputs/perlin_turtles.png" %} 
 </td>
 <td> 
-<img src="outputs/perlin_turtles2.png" alt="Drawing2" width='250px'/> </td>
+{% include image.html alt="Drawing2" max-width="250px" file="/days_of_code/outputs/perlin_turtles2.png" %} </td>
 </tr></table>
-
-</div>
-
-</div>
-
 </div>
 </div>
-
 </div>
-    {% endraw %}
-
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Week-2">Week 2<a class="anchor-link" href="#Week-2"> </a></h3><p>On day 6 I moved to ipycanvas hoping to make some interactive graphics stuff. It was good fun, and seeing thousands of circles move and shift and react to mouse clicks was satisfying. Sadly it doesn't leave an artefact that I can embed into these html docs, so you'll have to take my word for it or wait for my recap video(s) and make do with this static image for now:</p>
-
-</div>
-</div>
-</div>
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-
 <div style="width: 50%; display: block; margin-left: auto;  margin-right: auto;">
-<img src="outputs/perlin_ipycanvas1.png">
-</div>
-
-</div>
-
-</div>
-
+{% include image.html file="/days_of_code/outputs/perlin_ipycanvas1.png" %}
 </div>
 </div>
-
 </div>
-    {% endraw %}
-
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Day 7 was a documentation day - I wrote the summary so far and tidied notebooks 1-6, making them easier to read and removing some duplicated cells and other cruft that was left over from the initial experimentation. I did write some code as I re-factored things, but it was mostly admin. I think this is important, and I will do 'documentation days' every week or two to keep things organised.</p>
 <p>You'll notice day 8 is missing - I did some playing with a separate project (TODO link birdio).</p>
 <p>Days 9 and 10 I was playing with <a href="https://hackaday.io/project/178286-data-driven-mood-light">my entry into the Hackaday Data Loggin' Contest</a>. The data is a record of how many times a certain kind of event happened every day for the past few years.</p>
 <p>Day 9 was EDA and using cairo to try and make some pretty visualizations:</p>
-
-</div>
-</div>
-</div>
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-
 <table><tr>
 <td> 
-<img src="outputs/day_counts_left_to_right.png" alt="Drawing" width='350px'/> </td>
+{% include image.html alt="Drawing" max-width="350px" file="/days_of_code/outputs/day_counts_left_to_right.png" %} </td>
 <td> 
-<img src="outputs/day_counts_spiral.png" alt="Drawing2" width='350px'/> </td>
+{% include image.html alt="Drawing2" max-width="350px" file="/days_of_code/outputs/day_counts_spiral.png" %} </td>
 </tr></table>
-
-</div>
-
-</div>
-
 </div>
 </div>
-
 </div>
-    {% endraw %}
-
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>And day 10 took things 3D, using <a href="https://github.com/SolidCode/SolidPython">SolidPython</a> (a python equivalent of OpenSCAD) to make some 3D shapes which I could then 3D print:</p>
-
-</div>
-</div>
-</div>
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea ">
-
 <table><tr>
 <td> 
-<img src="images/drawing_spheres.png" alt="Drawing" width='350px'/> </td>
+{% include image.html alt="Drawing" max-width="350px" file="/days_of_code/images/drawing_spheres.png" %} </td>
 <td> 
-<img src="images/3d_print.jpeg" alt="Drawing2" width='350px'/> </td>
+{% include image.html alt="Drawing2" max-width="350px" file="/days_of_code/images/3d_print.jpeg" %} </td>
 </tr></table>
-
-</div>
-
-</div>
-
 </div>
 </div>
-
 </div>
-    {% endraw %}
-
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Week-3">Week 3<a class="anchor-link" href="#Week-3"> </a></h3><p>Just started, but so far I am really enjoying Observable. My first notebook there played with some of the same Perlin noise ideas as day 5. But since it's all JS this time I get interactive cell outputs that I can embed anywhere! Check it out:</p>
+<h3 id="Week-3">Week 3<a class="anchor-link" href="#Week-3"> </a></h3><p>At the start of the week I met Observable. My first notebook there played with some of the same Perlin noise ideas as day 5. But since it's all JS this time I get interactive cell outputs that I can embed anywhere! Check it out:</p>
 
 </div>
 </div>
@@ -324,11 +228,49 @@ nb_path: "notebooks/index.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Tuesday and Wednesday I was sidetracked playing with Perceiver TODO notes and maybe a notebook</p>
+<h2 id="Week-4-(ish)">Week 4 (ish)<a class="anchor-link" href="#Week-4-(ish)"> </a></h2><p>Shaders...</p>
 
 </div>
 </div>
 </div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">&lt;iframe width=&quot;99%&quot; height=&quot;400&quot; frameborder=&quot;0&quot;</span>
+<span class="s2">  src=&quot;./shader_gallery.html&quot;&gt;&lt;/iframe&gt;</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+<iframe width="99%" height="400" frameborder="0"
+  src="./shader_gallery.html"></iframe>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion"> </a></h1><p>This is going well so far - I will try to keep this updated :)</p>
