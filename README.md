@@ -4,32 +4,15 @@
 
 The goal here is to write small bits of code every weekday. I'm going to try and keep everything in Jupyter notebooks so that I can use NBDev to manage documenting it all and sharing code between days in case I want to build more complex things using building blocks from previous days. It should also make everything into a nice website at https://johnowhitaker.github.io/days_of_code/.
 
-Here's a demo function defined in another notebook:
-
-```python
-demo_code() # Code defined in 00_core.ipynb, exported to 'core.py' and imported at the top of this NB
-```
-
-
-
-
-    'demo'
-
-
-
-Code from multiple notebooks can go into the same eventual file. Here's a function from 01_Cairo_Hello.ipynb that does a bit of text with cairo and also gets exported to core.py
-
-```python
-hw_cairo('this should work')
-```
-
-
-![png](docs/images/output_4_0.png)
-
-
 # Sumary of the Journey
 
-I set this up (configuring nbdev etc) one weekend so that I could dive straight in on the Monday and start coding. You can use the sidebar on the left to view the notebook for each day, but here I will try to summarise what was keeping me busy as this project unfolded.
+I set this up (configuring nbdev etc) one weekend so that I could dive straight in on the Monday and start coding. You can use the sidebar on the left to view the notebook for each day, but here I will try to summarise what was keeping me busy as this project unfolded. I am also releasing summary videos on my [DataScienceCastnet channel](https://www.youtube.com/channel/UCP6gT9X2oXYcssfZu05RV2g). The first few are out:
+- [Days of Code: Intro and Recap of the first few weeks](https://www.youtube.com/watch?v=gyPllP0S7iM)
+- [Days of Code 2: WhistleGen - generating Irish music with machine learning](https://www.youtube.com/watch?v=B7SEP2p4Y1A)
+- [Meet DotSwarm: A Slime-Mould-Inspired Shader](https://www.youtube.com/watch?v=mnuwd_z9YGE)
+- [Competition Attempts: MABE Challenge first thoughts](https://www.youtube.com/watch?v=E5mSH1ajQkE)
+- [Competition attempts: BirdClef 2021 Initial Approach](https://www.youtube.com/watch?v=Yd4YS5tu54I)
+
 
 ### Week 1
 
@@ -104,19 +87,37 @@ display(HTML("""
 
 ## Week 4 (ish)
 
-Shaders...
+I got really into shaders, and did some pretty cool things with them. My favourite exploration was the idea of slime-mould inspired simulations, with thousands (or millions - thanks to webgl) of agents move about leaving trails which can in turn affect their movement. This gives rise to all sorts of emergent behaviour - explore it in the full [observable notebook](https://observablehq.com/@johnowhitaker/dotswarm-exploring-slime-mould-inspired-shaders) or watch [my video](https://www.youtube.com/watch?v=mnuwd_z9YGE) for some pretty demos.
+
+It was cool to make something that other people got interested in, and I was very pleasantly suprised when kind folks from the community chimed in with improvements and comments :)
 
 ```python
 display(HTML("""
-<iframe width="99%" height="400" frameborder="0"
-  src="./shader_gallery.html"></iframe>
+<iframe width="100%" height="876" frameborder="0"
+  src="https://observablehq.com/embed/@johnowhitaker/dotswarm-exploring-slime-mould-inspired-shaders?width=400&height=400&n_power=16&initial_speed=0.2&speed_randomness=0.2&speed_multiplier=1&start_arrangement=Ring&wall_strat=Wrap&col_strat=Grey&blurr_fraction=1&fade_speed=0.05&vertex_radius=1&random_steer_factor=0.1&constant_steer_factor=0.4&trail_strength=0.2&search_radius=0.01&cells=viewof+gl"></iframe>
 """))
 ```
 
 
 
-<iframe width="99%" height="400" frameborder="0"
-  src="./shader_gallery.html"></iframe>
+<iframe width="100%" height="876" frameborder="0"
+  src="https://observablehq.com/embed/@johnowhitaker/dotswarm-exploring-slime-mould-inspired-shaders?width=400&height=400&n_power=16&initial_speed=0.2&speed_randomness=0.2&speed_multiplier=1&start_arrangement=Ring&wall_strat=Wrap&col_strat=Grey&blurr_fraction=1&fade_speed=0.05&vertex_radius=1&random_steer_factor=0.1&constant_steer_factor=0.4&trail_strength=0.2&search_radius=0.01&cells=viewof+gl"></iframe>
+
+
+
+Webgl is very powerful but it also requires quite a bit of extra work to get up and running. Now that I have figured out at least some of the quirks, I anticipate returning to this for more experimentation in the future.
+
+## Week 5 (ish)
+
+We were travelling for a week or two, which meant a complete break from technology. I have resumed coding, but the daily experiments haven't suited the nbdev environment so I am going to link to them from here rather than coercing them into notebooks within this days_of_code project. The highlights:
+- More shader experiments, gallery coming soon
+- Starting work on an entry into the BirdClef 2021 challenge on kaggle. Blog post: https://datasciencecastnet.home.blog/2021/04/22/birdclef-entry-bird-call-classification-with-fastai/
+- Polishing one of my earlier days of code notebooks to use as an example for interactive animations with ipycanvas: https://github.com/martinRenou/ipycanvas/pull/190
+- Tidying up my half-finished introductory data science course: https://johnowhitaker.github.io/ds_zero/
+
+Starting next week I'm hoping to move back to projects that suit this notebook format (although I may still play with observable and webgl on the side). 
+
+
 
 
 
