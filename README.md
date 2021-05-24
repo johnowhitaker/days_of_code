@@ -85,6 +85,12 @@ display(HTML("""
 
 
 
+I also generated some Irish Music using a generative language model trained on a bunch of traditional songs. 
+
+<img src="notebooks/images/whistlegen.png" alt="Whistle music" width="350px"> </td>
+
+More info in the [video](https://www.youtube.com/watch?v=B7SEP2p4Y1A).
+
 ## Week 4 (ish)
 
 I got really into shaders, and did some pretty cool things with them. My favourite exploration was the idea of slime-mould inspired simulations, with thousands (or millions - thanks to webgl) of agents move about leaving trails which can in turn affect their movement. This gives rise to all sorts of emergent behaviour - explore it in the full [observable notebook](https://observablehq.com/@johnowhitaker/dotswarm-exploring-slime-mould-inspired-shaders) or watch [my video](https://www.youtube.com/watch?v=mnuwd_z9YGE) for some pretty demos.
@@ -105,7 +111,9 @@ display(HTML("""
 
 
 
-Webgl is very powerful but it also requires quite a bit of extra work to get up and running. Now that I have figured out at least some of the quirks, I anticipate returning to this for more experimentation in the future.
+Webgl is very powerful but it also requires quite a bit of extra work to get up and running. Now that I have figured out at least some of the quirks, I anticipate returning to this for more experimentation in the future. I also put some of these on a low-footprint NFT marketplace - you can collect them for cheap from https://www.hicetnunc.xyz/tz/tz1RMthfMEDJsXiMqz4Gy4DDx7utzYVNP14c
+
+<img src="notebooks/images/hen.png" alt="My Hic et Nuc Gallery" width="350px"> </td>
 
 ## Week 5 (ish)
 
@@ -121,6 +129,27 @@ Starting next week I'm hoping to move back to projects that suit this notebook f
 
 
 
+## Week 6
+
+```python
+from IPython.display import Video
+Video('images/map_series.mp4',  width=700, height=400)
+```
+
+
+
+
+<video src="images/map_series.mp4" controls  width="700"  height="400">
+      Your browser does not support the <code>video</code> element.
+    </video>
+
+
+
+- I did some even fancier stuff with shaders (video above shows some that I sold on hic et nunc, a low-carbon NFT site). You can view my full gallery [here](https://www.hicetnunc.xyz/tz/tz1RMthfMEDJsXiMqz4Gy4DDx7utzYVNP14c). It's so fun having other people collect my work. I've made ~$50 by selling code art! Fun stuff :)
+- I spent a lot of the week working on facets of the AICROWD [ADDI Alzheimers Detection Challenge](https://www.aicrowd.com/challenges/addi-alzheimers-detection-challenge) - since all the work is locked on a VM in the cloud (it's medical data after all) I can't include that in this repo or notebook series, but I will be publishing tutorials and such through the AICROWD platform.
+- I made a sort of tutorial/exploration notebook on dealing with class imbalance related to the challenge. I can't share it locally since the data is sensitive, but there is a view-only copy at https://www.aicrowd.com/showcase/dealing-with-class-imbalance and if you are part of the compatition you can run the code on the virtual workspace.
+
 # Conclusion
 
-This is going well so far - I will try to keep this updated :)
+At some point on this journey I was back to enjoying coding and wanting to do more, so I've let go of this specific project - it has fulfilled its purpose :) I highly recommend this to anyone looking for a way back into coding for the joy of it - aiming for a small atomic project each day helps keep things from growing to large and scary. Good luck,
+J

@@ -153,6 +153,15 @@ nb_path: "notebooks/index.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>I also generated some Irish Music using a generative language model trained on a bunch of traditional songs.</p>
+<p>{% include image.html alt="Whistle music" max-width="350px" file="/days_of_code/images/whistlegen.png" %} &lt;/td&gt;</p>
+<p>More info in the <a href="https://www.youtube.com/watch?v=B7SEP2p4Y1A">video</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Week-4-(ish)">Week 4 (ish)<a class="anchor-link" href="#Week-4-(ish)"> </a></h2><p>I got really into shaders, and did some pretty cool things with them. My favourite exploration was the idea of slime-mould inspired simulations, with thousands (or millions - thanks to webgl) of agents move about leaving trails which can in turn affect their movement. This gives rise to all sorts of emergent behaviour - explore it in the full <a href="https://observablehq.com/@johnowhitaker/dotswarm-exploring-slime-mould-inspired-shaders">observable notebook</a> or watch <a href="https://www.youtube.com/watch?v=mnuwd_z9YGE">my video</a> for some pretty demos.</p>
 <p>It was cool to make something that other people got interested in, and I was very pleasantly suprised when kind folks from the community chimed in with improvements and comments :)</p>
 
@@ -199,7 +208,8 @@ nb_path: "notebooks/index.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Webgl is very powerful but it also requires quite a bit of extra work to get up and running. Now that I have figured out at least some of the quirks, I anticipate returning to this for more experimentation in the future.</p>
+<p>Webgl is very powerful but it also requires quite a bit of extra work to get up and running. Now that I have figured out at least some of the quirks, I anticipate returning to this for more experimentation in the future. I also put some of these on a low-footprint NFT marketplace - you can collect them for cheap from <a href="https://www.hicetnunc.xyz/tz/tz1RMthfMEDJsXiMqz4Gy4DDx7utzYVNP14c">https://www.hicetnunc.xyz/tz/tz1RMthfMEDJsXiMqz4Gy4DDx7utzYVNP14c</a></p>
+<p>{% include image.html alt="My Hic et Nuc Gallery" max-width="350px" file="/days_of_code/images/hen.png" %} &lt;/td&gt;</p>
 
 </div>
 </div>
@@ -220,7 +230,60 @@ nb_path: "notebooks/index.ipynb"
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion"> </a></h1><p>This is going well so far - I will try to keep this updated :)</p>
+<h2 id="Week-6">Week 6<a class="anchor-link" href="#Week-6"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Video</span>
+<span class="n">Video</span><span class="p">(</span><span class="s1">&#39;images/map_series.mp4&#39;</span><span class="p">,</span>  <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<video src="images/map_series.mp4" controls  width="700"  height="400">
+      Your browser does not support the <code>video</code> element.
+    </video>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>I did some even fancier stuff with shaders (video above shows some that I sold on hic et nunc, a low-carbon NFT site). You can view my full gallery <a href="https://www.hicetnunc.xyz/tz/tz1RMthfMEDJsXiMqz4Gy4DDx7utzYVNP14c">here</a>. It's so fun having other people collect my work. I've made ~$50 by selling code art! Fun stuff :)</li>
+<li>I spent a lot of the week working on facets of the AICROWD <a href="https://www.aicrowd.com/challenges/addi-alzheimers-detection-challenge">ADDI Alzheimers Detection Challenge</a> - since all the work is locked on a VM in the cloud (it's medical data after all) I can't include that in this repo or notebook series, but I will be publishing tutorials and such through the AICROWD platform.</li>
+<li>I made a sort of tutorial/exploration notebook on dealing with class imbalance related to the challenge. I can't share it locally since the data is sensitive, but there is a view-only copy at <a href="https://www.aicrowd.com/showcase/dealing-with-class-imbalance">https://www.aicrowd.com/showcase/dealing-with-class-imbalance</a> and if you are part of the compatition you can run the code on the virtual workspace.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion"> </a></h1><p>At some point on this journey I was back to enjoying coding and wanting to do more, so I've let go of this specific project - it has fulfilled its purpose :) I highly recommend this to anyone looking for a way back into coding for the joy of it - aiming for a small atomic project each day helps keep things from growing to large and scary. Good luck,
+J</p>
 
 </div>
 </div>
